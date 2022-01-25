@@ -2,17 +2,17 @@ import './App.css';
 import Parent from "./Parent";
 import ValueContext from "./ValueContext";
 import {useState} from "react";
+import SubParent from "./SubParent";
 
 function App() {
-    // let value=1;
-        let val=useState(30);
+
     return (
-        <ValueContext.Provider value={val}>
+        // <ValueContext.Provider value={val}>
             <div>
-                <Parent/>
-                <button>Parent Button</button>
+                <Parent></Parent>
+                <SubParent></SubParent>
             </div>
-        </ValueContext.Provider>
+        // </ValueContext.Provider>
     );
 }
 
