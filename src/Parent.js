@@ -1,10 +1,14 @@
-import React from "react";
+import React, {useState} from "react";
+import Child from "./Child";
 
-function Parent() {
+
+function Parent(props) {
+
   return (
     <div >
-
-    </div>
+        <p>This is Parent</p>
+        <Child/>
+    </div >
   );
 }
 

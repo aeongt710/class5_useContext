@@ -1,6 +1,6 @@
 import React from 'react';
+import { useState } from "react";
 
 
-const GlobalValue=React.useContext(22);
-
-export default GlobalValue;
+let ValueContext=React.createContext(100,()=>{});
+export default ValueContext;
